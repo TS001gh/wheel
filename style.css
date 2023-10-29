@@ -29,6 +29,11 @@ video {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
 }
+
+svg {
+  fill: rgb(20 35 61) !important;
+}
+
 .button {
   position: absolute;
   top: 50%;
