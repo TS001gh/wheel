@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Video Player</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('images/blob-scatter-haikei.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      video {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+        transition: transform 0.2s;
+      }
+
+      video:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <video id="myVideo" preload="auto" controls>
+      <source src="myVideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <script>
+      const video = document.getElementById('myVideo');
+      let frameRate = 10;
+
+      document.addEventListener(
+        'wheel',
+        function (event) {
+          let framesToMove = 2;
+
+          if (event.deltaY > 0) {
+            video.currentTime += framesToMove / frameRate;
+          } else {
+            video.currentTime -= framesToMove / frameRate;
+          }
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+    </script>
+  </body>
+</html>
