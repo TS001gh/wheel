@@ -20,9 +20,13 @@ video {
   translate: 0 -25%;
   aspect-ratio: 16 / 9;
   z-index: -100;
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s ease-out;
   scale: 0;
   opacity: 0;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
 }
 .button {
   position: absolute;
@@ -46,11 +50,11 @@ video {
   position: static;
   translate: 0;
   z-index: 1000;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 
 @media (min-width: 1400px) {
