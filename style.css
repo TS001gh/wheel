@@ -67,3 +67,7 @@ video {
     height: 100px;
   }
 }
+
+body {
+  overflow: hidden;
+}
