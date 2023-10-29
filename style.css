@@ -20,20 +20,24 @@ video {
   translate: 0 -25%;
   aspect-ratio: 16 / 9;
   z-index: -100;
-  transition: all 1s ease-out;
   scale: 0;
   opacity: 0;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 .button {
   position: absolute;
   top: 50%;
   translate: 0 -55%;
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
 }
 
 .hide {
