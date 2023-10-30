@@ -70,3 +70,10 @@ video {
     height: 100px;
   }
 }
+
+@media (max-width: 760px) {
+  .button {
+    width: 20px !important;
+    height: 20px;
+  }
+}
